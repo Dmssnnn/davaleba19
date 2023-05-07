@@ -30,6 +30,14 @@
 .header-text {
     padding-left: 30px;
 }
+.header-text h1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    color: #000000;
+}
 .header-nav {
     margin-right: 140px;
 }
