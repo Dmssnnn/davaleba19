@@ -142,7 +142,7 @@ li {
     margin-left: 36px;
 }
 .blocks-wrapper {
-    width: 1650px;
+    max-width: 1650px;
     margin-top: 50px;
     margin-left: 126px;
     display: flex;
@@ -255,8 +255,11 @@ li {
     width: 389px;
     height: 75px;
     display: flex;
-    background-color: blue;
 
+}
+.projects-hover-content:hover {
+    background-color: blue;
+    transition: 0.5s linear;
 }
 .projects-hover-text {
     padding-left: 20px;
@@ -355,10 +358,14 @@ li {
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
+    border-radius: 10px;
+}
+.bluespan:hover {
+    transition: 0.4s linear;
     color: #FFFFFF;
     background: #087DBF;
+
     border: 1px solid #087DBF;
-    border-radius: 10px;
 }
 .input-hover-category-tabs {
     display: flex;
@@ -427,6 +434,7 @@ color: #000000;
 .ratings-tabs .mainspam {
     margin-left: 20px;
     padding: 10px;
+    border: 1px solid white;
     border: 1px solid #087DBF;
     border-radius: 21.5px;
     font-family: 'myfont1';
@@ -474,7 +482,6 @@ color: #000000;
 }
 .bluespann {
     padding: 5px;
-    background: #087DBF;
     border: 1px solid #087DBF;
     border-radius: 10px;
     font-family: 'Inter';
@@ -482,7 +489,11 @@ color: #000000;
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
-    color: #FFFFFF;
+    color: black;
+}
+.bluespann:hover {
+    background: #087DBF;
+    transition: 0.2s linear;
 }
 .location-tab .whitespan{
     margin-left: 20px;
