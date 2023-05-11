@@ -58,20 +58,23 @@ li {
     background-color: white;
 }
 .input-hover {
-    width: 1012px;
+    width: 1030px;
     height: 640px;
     background-color: #FFFFFF;
     border: 1px solid #000000;
     position: absolute;
+    z-index: 5;
     top: 100px;
     left: 20px;
-    opacity: 0;
-    z-index: 3;
+    display: none;
     transition: 0.2s linear;
 }
 .input-content:hover .input-hover {
-    opacity: 1;
-
+   display: block;
+}
+.input-content {
+    max-width: 1095px;
+    height: 87px;
 }
 .input-content input {
     width: 1095px;
@@ -145,6 +148,7 @@ li {
     max-width: 1650px;
     margin-top: 50px;
     margin-left: 126px;
+    position: absolute ;
     display: flex;
     flex-wrap: wrap;
 }   
@@ -346,7 +350,7 @@ li {
     color: #000000;
 }
 .input-hover-category-tabs {
-    width: 1012px;
+    width: 1095px;
 }
 .tabs {
     margin-top: 30px;
@@ -421,11 +425,11 @@ li {
 }
 .ratings-content h3 {
     font-family: 'myfont1';
-font-style: normal;
-font-weight: 700;
-font-size: 24px;
-line-height: 29px;
-color: #000000;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
 }
 .ratings-tabs {
     display: flex;
@@ -533,4 +537,10 @@ color: #000000;
     font-size: 20px;
     line-height: 24px;
     color: #000000;
+}
+
+/* /////////////////////// */
+
+a {
+    text-decoration: none;
 }
