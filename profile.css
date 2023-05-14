@@ -137,6 +137,9 @@ transform: translateY(-50%);
     line-height: 24px;
     color: #FFFFFF;
 }
+.media-red-button {
+    display: none;
+}
 .about-me-section {
     height: 300px;
     margin-top: 40px;
@@ -302,4 +305,137 @@ transform: translateY(-50%);
     font-size: 24px;
     line-height: 29px;
     color: #000000;
+}
+
+@media (max-width:392px) {
+    header {
+        display: block;
+        max-width: 392px;
+        height: 50px;
+        width: 100%;
+        margin: 35px auto;
+    }
+    .about-me-main-picture img{
+        width: 100%;
+        height: 100%;
+    }
+    .dato-sanadze-picture {
+        position: relative;    
+        left: 20px;
+        top:50px;
+        transform: translateY(-50%);
+    }
+    .dato-sanadze-picture img {
+        width: 100px;
+        height: 100px;
+    }
+    .dato-sanadze-content {
+        max-width: 392px;
+        height: 120px;
+    }
+    .dato-sanadze-text-content {
+        width: 392px;
+    }
+    .dato-sanadze-titlee h2 {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 48px;
+        color: #000000;
+    }
+    .above-text {
+        width: 270px;
+    }
+    .above-text span {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 29px;
+        color: rgba(80, 80, 80, 0.5);
+    }
+    .container {
+        max-width: 392px;
+        width: 100%;
+        margin: 0px auto;
+    }
+    .vacancies-content {
+        width: 100%;
+    }
+    .vacancies-block > span {
+        font-size: 10px;
+    }
+    .itspecial-span {
+        padding-left: 10px;
+    }
+    .citybatumi {
+        padding-left: 90px;
+    }
+    .published-below-span {
+        padding-left: 90px;
+    }
+    .deadline-below-span {
+        padding-left: 40px;
+    }
+
+    .vacancies-block2 > span {
+        font-size: 10px;
+    }
+    .itspecial-span {
+        padding-left: 10px;
+    }
+    .citybatumi {
+        padding-left: 90px;
+    }
+    .published-below-span {
+        padding-left: 90px;
+    }
+    .deadline-below-span {
+        padding-left: 40px;
+    }
+    .itspan2 {
+        padding-left: 10px;
+    }
+    .vacancies-white-block {
+        display: none;
+    }
+    .red-button {
+        display: none;
+    }
+    .media-red-button {
+        display: flex;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        justify-content: center;
+    }
+    .media-red-button button img {
+        width: 12px;
+        height: 12px;
+        vertical-align: middle;
+    }
+    .media-red-button button {
+        width: 150px;
+        height: 30px;
+        background: #9F364E;
+        border-radius: 25px;    
+        border-color:#9F364E;
+    }
+    .media-red-button button span {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 10px;
+        line-height: 24px;
+        color: #FFFFFF;
+    }
+    .header-logo-content img {
+        width: 30px;
+        height: 30px;
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+    .header-logo-content h1{
+        display: none;
+    }
 }
