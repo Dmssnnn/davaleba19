@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    width: 100%;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+    padding: 30px;
+}
+.icon-content {
+    display: flex;
+    gap: 5px;
+    padding-left: 10%;
+    align-items:center ;
+}
+.nav-content {
+    padding-right: 15%;
+}
+.box {
+    width: 500px;
+    height: 500px;
+    background-color: red;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+}
+ul {
+    display: flex;
+    gap: 20px;
+    
+}
+li {
+    list-style: none;
+    
+}
+li a {
+    text-decoration: none;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+}
+.content-container {
+    padding: 10%;
+}
+.content-container {
+    display: flex;
+    justify-content: space-between;
+}
+.content-main-title {
+    width:80%;
+}
+.content-main-title h2 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 123%;
+    color: #087DBF;
+}
+.below-blocks-wrapper {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+.below-left-content {
+    width: 100%;
+}
+.below-right-content {
+    width: 100%;
+}
+.below-title h5 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    color: #000000;
+}
+.below-text {
+    width:60%;
+}
+.below-text span {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+}
+.below-link a {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    text-decoration-line: underline;
+    color: #087DBF;
+}
+footer {
+    width: 100%;
+    background: #000000;
+    padding: 20px;
+}
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.footer-icons a{
+    padding: 10px;
+    text-decoration: none;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 250;
+    font-size: 18px;
+    line-height: 27px;
+    color: #FFFFFF;
+}
+footer div span {
+    color: #FFFFFF;
+}

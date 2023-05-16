@@ -248,13 +248,8 @@ transform: translateY(-50%);
 }
 .vacancies-block {
     height: 60px;
-    margin-top: 27px;
-    padding-top: 20px;
     background: #EFEFEF;
     border-bottom: 1px solid grey;
-}
-.vacancies-content {
-    margin-top: 41px;
 }
 .vacancies-white-block span {
     font-family: 'Inter';

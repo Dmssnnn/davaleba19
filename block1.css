@@ -265,7 +265,9 @@ transform: translateY(-50%);
     line-height: 29px;
     color: #000000;
 }
-
+.blue-button2 {
+    display: none;
+}
 .cityspan {
     padding-left: 665px;
 }
