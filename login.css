@@ -22,15 +22,13 @@ header {
 .nav-content {
     padding-right: 15%;
 }
-.box {
-    width: 500px;
-    height: 500px;
-    background-color: red;
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translateY(-50%);
-    transform: translateX(-50%);
+h1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    color: #000000;
 }
 ul {
     display: flex;
@@ -58,9 +56,10 @@ li a {
     justify-content: space-between;
 }
 .content-main-title {
-    width:80%;
+    width:100%;
 }
 .content-main-title h2 {
+    width: 100%;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
@@ -68,13 +67,19 @@ li a {
     line-height: 123%;
     color: #087DBF;
 }
+.right-content {
+    width: 50%;
+}
+.right-content img {
+    width: 100%;
+}
 .below-blocks-wrapper {
-    width: 80%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
 .below-left-content {
-    width: 100%;
+    width:100%;
 }
 .below-right-content {
     width: 100%;
@@ -128,4 +133,27 @@ footer {
 }
 footer div span {
     color: #FFFFFF;
+}
+
+@media(max-width:1024px) {
+    h1 {
+        display: none;
+    }
+    .content-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .content-main-title h2 {
+        font-size: 30px;
+    }
+    .main-title {
+        width: 100%;
+    }
+    .below-title h5 {
+        font-size: 15px;
+    }
+    .right-content {
+        width: 100%;
+        margin-top: 20px;
+    }
 }
