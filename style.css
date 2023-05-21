@@ -141,6 +141,9 @@ footer {
 footer div span {
     color: #FFFFFF;
 }
+.footer-icons {
+    display: flex;
+}
 
 @media(max-width:1024px) {
     h1 {
