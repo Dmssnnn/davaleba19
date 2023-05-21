@@ -55,7 +55,7 @@ li {
 }
 .sanadze-content {
     width: 100%;
-    background-image: url(images/sanadze-content-picture.svg);
+    background-image: url(images/section-main-pic.svg);
     background-repeat: no-repeat;
     background-size: cover ;
     display: flex;
