@@ -2,206 +2,38 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
 }
-
 @font-face {
-    font-family:'Inter';
+    font-family: 'Inter';
     src: url(fonts/Inter-Regular.ttf);
+}
+@font-face {
+    font-family: 'FiraGO';
+    src: url(fonts/FiraGO-Regular.ttf);
 }
 @font-face {
     font-family: 'Poppins';
     src: url(fonts/Poppins-Regular.ttf);
 }
-header {
+.container {
     max-width: 1920px;
-    height: 126px;
+    width: 100%;
     margin: 0 auto;
 }
-a {
-    text-decoration: none;
+header {
     padding: 10px;
 }
-.header-wrapper {
-    padding-top: 62px;
-    display: flex;
-    position: relative;
-}
-.header-logo {
-    position: absolute;
-    left: 140px;
-}
-.header-icons {
-    position: absolute;
-    right: 48px;
-}
-.header-icons img {
-    width: 30px;
-    height: 30px;
-}
-.container {
-    max-width: 1640px;
-    width: 100%;
-    margin: 32px auto;
-}
-.dato-sanadze-content {
-    width: 1640px;  
-    background: #EFEFEF;
+.logo-content {
     display: flex;
 }
-.dato-sanadze-picture {
-position: relative;    
-left: 20px;
-transform: translateY(-50%);
- width: 250px;
- height: 230px;
-}
-.dato-sanadze-rating {
-    margin-top: 15px;
-    padding-left: 100px;
-}
-.dato-sanadze-rating span {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 19px;
-    color: rgba(80, 80, 80, 0.5);
-}
-.stars {
-    padding-top: 15px;
-    padding-left: 53px;
-}
-.dato-sanadze-text-content {
-    width: 1274px;
-    height: 230px;
-}
-.dato-sanadze-title {
-    padding-top: 15px;
-    padding-left: 43px;
-}
-.dato-sanadze-title h2 {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 48px;
-    color: #000000;
-}
-.above-text {
-    width: 500px;
-    padding-top: 15px;
-    padding-left: 43px;
-}
-.above-text span {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 29px;
-    color: rgba(80, 80, 80, 0.5);
-}
-.below-text {
-    padding-top: 15px;
-    padding-left: 43px;
-}
-.below-text span {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 29px;
-    color: rgba(80, 80, 80, 0.5);
-}
-.content-tabs {
-    padding-top: 18px;
-    padding-left: 43px;
-}
-.content-tabs span {
-    background: #D9D9D9;
-    border-radius: 13px;
-    padding: 5px;
-    margin-left: 15px;
-}
-.dato-sanadze-title {
+.logo-title {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
 }
-.blue-button button {
-    width: 225px;
-    height: 50px;
-    background: #087DBF;
-    border-radius: 25px;    
-    border-color:#087DBF ;
-}
-.blue-button button span {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 24px;
-    color: #FFFFFF;
-}
-.about-me-section {
-    height: 300px;
-    margin-top: 40px;
-    background-color: #EFEFEF;
-}
-.about-me-section-title h3 {
-    padding-top: 20px;
-    padding-left: 20px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 44px;
-    color: #000000;
-}
-.about-me-section-text {
-    height: 149px;
-}
-.about-me-section-text p {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 27px;
-    line-height: 33px;
-    color: rgba(80, 80, 80, 0.5);
-    padding: 23px 137px 64px 20px;
-}
-.see-my-projects-content-title {
-    display: flex;
-}
-.see-my-projects-content {
-    margin-top: 60px;
-}
-.section-title h3{
-    padding-left: 23px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 44px;
-    color: #000000;
-}
-.section-link {
-    margin-top: 30px;
-}
-.section-link a {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 27px;
-    line-height: 33px;
-    text-decoration-line: underline;
-    color: #000000;
-}
-.portfolio-content {
-    height: 1246px;
-    background-color: #E2E2E2;
-}
-.portfolio-title h2 {
-    padding-top: 39px;
-    text-align: center;
+.logo-title h2 {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
@@ -209,322 +41,241 @@ transform: translateY(-50%);
     line-height: 60px;
     color: #000000;
 }
-.block {
-    width: 494px;
-    height:455px;
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+ul {
+    display: flex;
+}
+li {
+    padding: 10px;
+}
+.sanadze-content {
+    width: 100%;
+    background: #D9D9D9;
+    background-image: url(images/dato-content-pic.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    padding-top: 166px;
+}
+
+.sanadze-picture-content {
+    margin-left: 20px;
+    margin-top: 50px;
+}
+.sanadze-picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dato-ratings {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dato-ratings span{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(80, 80, 80, 0.5);
+}
+.dato-stars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+.dato-stars span {
+    padding: 3px;
+}
+.dato-sanadze-title-content {
+    padding-left: 40px;
+    margin-top: 20px;
+    display: flex;
+    padding-top:4%;
+    flex-direction: column;
+    justify-content: center;
+    align-items:start;
+
+}
+.dato-sanadze-title {
+    width: 100%;
+}
+.dato-sanadze-title h2 {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    color: #000000;
+}
+.dato-sanadze-job {
+    width: 100%;
+    margin-top: 15px;
+}
+.dato-sanadze-job span {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: rgba(80, 80, 80, 0.5);
+}
+.dato-sanadze-tbilisi-georgia {
+    width: 100%;
+    margin-top: 15px;
+}
+.dato-sanadze-tbilisi-georgia span {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: rgba(80, 80, 80, 0.5);
+}
+.dato-sanadze-tab span {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #505050;
+    background: #D9D9D9;
+    border-radius: 13px;
+}
+
+
+
+.middle-about-me-section {
+    margin-top: 40px;
+    padding: 3%;
+    width: 100%;
+    background: #EFEFEF;
+    border-radius: 0px 0px 45px 45px;
+}
+.middle-about-me-section-title h2{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: #000000;
+}
+.middle-about-me-section-text {
+    margin-top: 10px;
+}
+.middle-about-me-section-text p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 33px;
+    color: rgba(80, 80, 80, 0.5);
+}
+see-my-projects-wrapper {
+    width: 100%;
+}
+.see-my-projects {
+    width: 100%;
     margin-top: 55px;
-    margin-left: 38px;
-}    
-.block span {
-    padding-left: 24px;
-    padding-top: 13px;
-    font-family: 'FiraGO';
+}
+.see-my-projects h2{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: rgb(0, 0, 0);
+}
+.content-link {
+    width: 100%;
+    margin-top: 15px;
+}
+.content-link a {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 33px;
+    text-decoration-line: underline;
+    color: rgb(0, 0, 0);
+}
+.my-portfolio-content {
+    margin-top: 50px;
+    width: 100%;
+    background: #EFEFEF;
+    padding: 2%;
+}
+.blocks {
+    margin-top: 30px;
+}
+.blocks img{
+    width: 100%;
+}
+.blocks span {
+    margin-top: 20px;
+    display: block;
+    font-family: FiraGO;
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
     line-height: 43px;
-    color: #000000;
+    color: rgb(0, 0, 0);
 }
-.portfolio-blocks {
+.my-portfolio-content h2{
+    width: 100%;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    color: rgb(0, 0, 0);
+}
+.blocks-wrapper {
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
-.red-button button {
-    width: 225px;
-    height: 50px;
-    background: #9F364E;
-    border-radius: 25px;    
-    border-color:#9F364E;
-}
-.red-button button span {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 24px;
-    color: #FFFFFF;
-}
-.redbg {
-    width: 1641px;
-}
-.vacancies-block {
-    height: 60px;
-    margin-top: 27px;
-    padding-top: 20px;
-    background: #EFEFEF;
-    border-bottom: 1px solid grey;
-}
-.vacancies-content {
-    margin-top: 41px;
-}
-.vacancies-white-block span {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 29px;
-    color: #000000;
-}
-.blue-button2 {
-    display: none;
-}
-.cityspan {
-    padding-left: 665px;
-}
-.Publishedspan {
-    padding-left: 397px;
-}
-.deadlinespan {
-    padding-left: 110px;
-}
-.vacancies-block span {
-    
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 29px;
-    color: #000000;
-}
-.citybatumi {
-    padding-left: 627px;
-}
-.published-below-span {
-    padding-left: 405px;
-}
-.deadline-below-span {
-    padding-left: 154px;
-}
-.vacancies-block2 {
-    background: #EFEFEF;
-    height: 60px;
-    padding-top: 20px;
-    border-bottom: 1px solid grey;
-}
-.vacancies-block2 span {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 29px;
-    color: #000000;
-}
-
-@media(max-width:392px) {
-    .container {
-        max-width: 392px;
-        width: 100%;
-        margin: 0 auto;
+@media(max-width:1024px) {
+    .sanadze-content {
+        flex-direction: column;
     }
-    header {
-        max-width: 392px;
-        width: 100%;
-    }
-    .header-logo {
-        left: 10px;
-    }
-    .header-icons {
-        right: 5px;
-    }
-    .header-logo img {
-        width: 40px;
-        height: 40px;
-    }
-    .dato-sanadze-content {
-        max-width: 392px;
-    }
-    .about-me-main-picture {
-        width: 392px;
-    }
-    .about-me-main-picture img {
-        width: 100%;
-        height: 100%;
-    }
-    .dato-sanadze-picture {
-        position: relative;    
-        left:20px;
-        top: 50px;
-        transform: translateY(-50%);
-        width: 250px;
-        height: 230px;
-    }
-    .dato-picc  {
-        width: 130px;
-        height: 130px;
-    }
-    .blue-button {
+    .dato-button {
         display: none;
     }
-    .dato-sanadze-rating {
-        margin-top: 15px;
-        padding-left: 40px;
+    .davit-about-me {
+        display: block;
     }
-    .stars {
-        padding-top: 15px;
-        padding-left: 1px;
+    .content-link {
+        display: none
     }
-    
-    .dato-sanadze-text-content {
-        width: 392px;
+    .logo-title {
+        display: none;
     }
-    .dato-sanadze-title {
-        width: 150px;
-    }
-    .dato-sanadze-title h2 {
-        font-size: 10px;
-    }
-    .above-text {
-        width: 200px;
-    }
-    .above-text span {
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 10px;
-        line-height: 29px;
-        color: rgba(80, 80, 80, 0.5);
-    }
-    .below-text {
-        width: 200px;
-    }
-    .below-text span {
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 10px;
-        line-height: 29px;
-        color: rgba(80, 80, 80, 0.5);
-    }
-    .content-tabs {
-        width: 200px;
-        padding-top: 18px;
-        padding-left:15px;
-    }
-    .content-tabs span{
-        background: #D9D9D9;
-        border-radius: 13px;
-        font-size: 10px;
-        padding: 5px;
-        margin-left:s
-    }
-    .about-me-section {
-        width: 100%;
-        height: 100%;
-    }
-    .about-me-section h3 {
-        padding-top: 20px;
-        padding-left: 20px;
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 44px;
-        color: #000000;
-    }
-    .about-me-section-text {
-        width: 100%;
-        height: 400px;
-    }
-    .about-me-section-text p {
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 10px;
-        color: rgba(80, 80, 80, 0.5);
-        padding: 23px 137px 64px 20px;
-    }
-    .see-my-projects-content {
-        width: 392px;
-    }
-    .section-img img {
-        margin-left: 5px;
-        margin-top: 10px;
-        width: 21px;
-        height: 21px;
-    }
-    .section-title h3 {
-        padding-left: 23px;
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 44px;
-        color: #000000;
-    }
-    .section-link a{
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 10px;
-        line-height: 33px;
-        text-decoration-line: underline;
-        color: #000000;
-    }
-    .portfolio-content {
-        max-width: 392px;
-        height: 3146px;
-        background-color: #E2E2E2;
-    }
-    .portfolio-title h2 {
-        padding-top: 39px;
-        text-align: center;
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 30px;
-        line-height: 60px;
-        color: #000000;
-    }
-    .portfolio-blocks {
-        width: 392px;
+    .blocks-wrapper {
         display: flex;
-        flex-wrap: wrap;
-    }
-    .block {
-        width: 100%;
-        margin-left: 1px;
-    }
-     img {
-        width: 390px;
-    }
-    .stars img{
-        width: 20px;
-        height: 20px;
-    }
-    .block span{
-        padding-left: 24px;
-        padding-top: 13px;
-        font-family: 'FiraGO';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 43px;
-        color: #000000;
-    }
-    .blue-button2 {
-        display: flex;
-        width: 392px;
-        height: 70px;
-        align-items: center;
         justify-content: center;
+        align-items: center;
     }
-    .blue-button2 button {
-        width: 225px;
-        height: 50px;
-        background: #087DBF;
-        border-radius: 25px;    
-        border-color:#087DBF ;
-    }
-    .blue-button2 img {
-        width: 20px;
-        height: 20px;
-    }
-    .blue-button2 button span {
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 20px;
-        line-height: 24px;
-        color: #FFFFFF;
-    }
-}   
+}

@@ -2,205 +2,40 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-@font-face {
-    font-family: FiraGO;
-    src: url(fonts/FiraGO-Regular.woff2);
-}
-@font-face {
-    font-family: Inter;
-    src: url(fonts/Inter-Regular.ttf);
-}
-header {
-    max-width: 1920px;
-    width: 100%;
-    height: 126px;
-    margin: 35px auto;
-}
-.header-content {
-    display: flex;
-    justify-content: space-between;
-}
-.header-logo-content {
-    display: flex;
-}
-.header-logo-content h1 {
-    padding-left: 20px;
-}
-ul {
-    display: flex;
-}
-li {
-    padding: 20px;
+    text-decoration: none;
     list-style-type: none;
 }
+@font-face {
+    font-family: 'Inter';
+    src: url(fonts/Inter-Regular.ttf);
+}
+@font-face {
+    font-family: 'FiraGO';
+    src: url(fonts/FiraGO-Regular.ttf);
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url(fonts/Poppins-Regular.ttf);
+}
 .container {
-    max-width: 1640px;
     width: 100%;
-    margin: 32px auto;
+    display: flex;
+    flex-direction: column;
+   
 }
-.dato-sanadze-content {
-    width: 1640px;  
-    background: #EFEFEF;
+header {
+    padding: 10px;
+    width: 100%;
+}
+.logo-content {
     display: flex;
 }
-.dato-sanadze-picture {
-position: relative;    
-left: 20px;
-transform: translateY(-50%);
- width: 250px;
- height: 230px;
-}
-.dato-sanadze-rating {
-    margin-top: 15px;
-    padding-left: 100px;
-}
-.dato-sanadze-rating span {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 19px;
-    color: rgba(80, 80, 80, 0.5);
-}
-.stars {
-    padding-top: 15px;
-    padding-left: 53px;
-}
-.dato-sanadze-text-content {
-    width: 1274px;
-    height: 230px;
-}
-.dato-sanadze-title {
-    padding-top: 15px;
-    padding-left: 43px;
-}
-.dato-sanadze-title h2 {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 48px;
-    color: #000000;
-}
-.above-text {
-    width: 500px;
-    padding-top: 15px;
-    padding-left: 43px;
-}
-.above-text span {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 29px;
-    color: rgba(80, 80, 80, 0.5);
-}
-.below-text {
-    padding-top: 15px;
-    padding-left: 43px;
-}
-.below-text span {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 29px;
-    color: rgba(80, 80, 80, 0.5);
-}
-.content-tabs {
-    padding-top: 18px;
-    padding-left: 43px;
-}
-.content-tabs span {
-    background: #D9D9D9;
-    border-radius: 13px;
-    padding: 5px;
-    margin-left: 15px;
-}
-.dato-sanadze-title {
+.logo-title {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
 }
-.blue-button button {
-    width: 225px;
-    height: 50px;
-    background: #087DBF;
-    border-radius: 25px;    
-    border-color:#087DBF ;
-}
-.blue-button button span {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 24px;
-    color: #FFFFFF;
-}
-.media-red-button {
-    display: none;
-}
-.about-me-section {
-    height: 300px;
-    margin-top: 40px;
-    background-color: #EFEFEF;
-}
-.about-me-section-title h3 {
-    padding-top: 20px;
-    padding-left: 20px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 44px;
-    color: #000000;
-}
-.about-me-section-text {
-    height: 149px;
-}
-.about-me-section-text p {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 27px;
-    line-height: 33px;
-    color: rgba(80, 80, 80, 0.5);
-    padding: 23px 137px 64px 20px;
-}
-.see-my-projects-content-title {
-    display: flex;
-}
-.see-my-projects-content {
-    margin-top: 60px;
-}
-.section-title h3{
-    padding-left: 23px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 44px;
-    color: #000000;
-}
-.section-link {
-    margin-top: 30px;
-}
-.section-link a {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 27px;
-    line-height: 33px;
-    text-decoration-line: underline;
-    color: #000000;
-}
-.portfolio-content {
-    height: 1246px;
-    background-color: #E2E2E2;
-}
-.portfolio-title h2 {
-    padding-top: 39px;
-    text-align: center;
+.logo-title h2 {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
@@ -208,229 +43,288 @@ transform: translateY(-50%);
     line-height: 60px;
     color: #000000;
 }
-.block {
-    width: 494px;
-    height:455px;
-    margin-top: 55px;
-    margin-left: 38px;
-}    
-.block span {
-    padding-left: 24px;
-    padding-top: 13px;
-    font-family: 'FiraGO';
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+ul {
+    display: flex;
+}
+li {
+    padding: 10px;
+}
+.sanadze-content {
+    width: 100%;
+    background-image: url(images/sanadze-content-picture.svg);
+    background-repeat: no-repeat;
+    background-size: cover ;
+    display: flex;
+    padding-top: 166px;
+}
+.sanadze-picture-content {
+    display: flex;
+    margin-left: 20px;
+}
+.sanadze-picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dato-ratings {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dato-ratings span{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(80, 80, 80, 0.5);
+}
+.dato-stars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+.dato-stars span {
+    padding: 3px;
+}
+.dato-sanadze-title-content {
+    margin-top: 20px;
+    margin-left: 20px;
+    display: flex;
+    padding-top:4%;
+    flex-direction: column;
+    justify-content: center;
+    align-items:start;
+
+}
+.dato-sanadze-title {
+    width: 100%;
+}
+.dato-sanadze-title h2 {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    color: #000000;
+}
+.dato-sanadze-job {
+    width: 100%;
+    margin-top: 15px;
+}
+.dato-sanadze-job span {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: rgba(80, 80, 80, 0.5);
+}
+.dato-sanadze-tbilisi-georgia {
+    width: 100%;
+    margin-top: 15px;
+}
+.dato-sanadze-tbilisi-georgia span {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: rgba(80, 80, 80, 0.5);
+}
+.dato-sanadze-tab span {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #505050;
+    background: #D9D9D9;
+    border-radius: 13px;
+}
+.sanadze-content {
+    display: flex;
+    justify-content: start;
+}
+.content-table {
+    margin-top: 2%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+table {
+    width: 100%;
+    border-collapse:collapse;
+}
+tbody {
+    width: 100%;
+}
+th {
+    
+    border: none;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: #FFFFFF;
+    background: #087DBF;
+}
+td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 10px;
+  }
+tr td {
+    text-align: center;
+    background: #EFEFEF;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+}
+.table-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.table-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.middle-about-me-section {
+    margin-top: 40px;
+    width: 100%;
+    background: #EFEFEF;
+    border-radius: 0px 0px 45px 45px;
+}
+.middle-about-me-section-title h2{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: #000000;
+}
+.middle-about-me-section-text {
+    margin-top: 10px;
+}
+.middle-about-me-section-text p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 40px;
+    color: #000000;
+}
+.see-my-projects-wrapper {
+    width: 100%;
+}
+.see-my-projects {
+    width: 100%;
+    margin-top:155px;
+}
+.see-my-projects h2{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: rgb(0, 0, 0);
+}
+.content-link {
+    width: 100%;
+    margin-top: 15px;
+}
+.content-link a {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 33px;
+    text-decoration-line: underline;
+    color: rgb(0, 0, 0);
+}
+.my-portfolio-content {
+    margin-top: 50px;
+    width: 100%;
+    background: #EFEFEF;
+    padding: 2%;
+}
+.blocks {
+    margin-top: 30px;
+}
+.blocks img{
+   max-width: 100%;
+}
+.blocks span {
+    margin-top: 20px;
+    display: block;
+    font-family: FiraGO;
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
     line-height: 43px;
-    color: #000000;
+    color: rgb(0, 0, 0);
 }
-.portfolio-blocks {
+.my-portfolio-content h2{
+    width: 100%;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    color: rgb(0, 0, 0);
+}
+.blocks-wrapper {
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
-.red-button button {
-    width: 225px;
-    height: 50px;
-    background: #9F364E;
-    border-radius: 25px;    
-    border-color:#9F364E;
-}
-.red-button button span {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 24px;
-    color: #FFFFFF;
-}
-.redbg {
-    width: 1641px;
-}
-.vacancies-block {
-    height: 60px;
-    background: #EFEFEF;
-    border-bottom: 1px solid grey;
-}
-.vacancies-white-block span {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 29px;
-    color: #000000;
-}
 
-.cityspan {
-    padding-left: 665px;
-}
-.Publishedspan {
-    padding-left: 397px;
-}
-.deadlinespan {
-    padding-left: 110px;
-}
-.vacancies-block span {
-    
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 29px;
-    color: #000000;
-}
-.citybatumi {
-    padding-left: 627px;
-}
-.published-below-span {
-    padding-left: 405px;
-}
-.deadline-below-span {
-    padding-left: 154px;
-}
-.vacancies-block2 {
-    background: #EFEFEF;
-    height: 60px;
-    padding-top: 20px;
-    border-bottom: 1px solid grey;
-}
-.vacancies-block2 span {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 29px;
-    color: #000000;
-}
-
-@media (max-width:392px) {
-    header {
-        display: block;
-        max-width: 392px;
-        height: 50px;
-        width: 100%;
-        margin: 35px auto;
-    }
-    .about-me-main-picture img{
-        width: 100%;
-        height: 100%;
-    }
-    .dato-sanadze-picture {
-        position: relative;    
-        left: 20px;
-        top:50px;
-        transform: translateY(-50%);
-    }
-    .dato-sanadze-picture img {
-        width: 100px;
-        height: 100px;
-    }
-    .dato-sanadze-content {
-        max-width: 392px;
-        height: 120px;
-    }
-    .dato-sanadze-text-content {
-        width: 392px;
-    }
-    .dato-sanadze-titlee h2 {
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 30px;
-        line-height: 48px;
-        color: #000000;
-    }
-    .above-text {
-        width: 270px;
-    }
-    .above-text span {
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 15px;
-        line-height: 29px;
-        color: rgba(80, 80, 80, 0.5);
-    }
+@media(max-width:1024px) {
     .container {
-        max-width: 392px;
-        width: 100%;
-        margin: 0px auto;
+        padding: 5%;
     }
-    .vacancies-content {
-        width: 100%;
-    }
-    .vacancies-block > span {
-        font-size: 10px;
-    }
-    .itspecial-span {
-        padding-left: 10px;
-    }
-    .citybatumi {
-        padding-left: 90px;
-    }
-    .published-below-span {
-        padding-left: 90px;
-    }
-    .deadline-below-span {
-        padding-left: 40px;
-    }
-
-    .vacancies-block2 > span {
-        font-size: 10px;
-    }
-    .itspecial-span {
-        padding-left: 10px;
-    }
-    .citybatumi {
-        padding-left: 90px;
-    }
-    .published-below-span {
-        padding-left: 90px;
-    }
-    .deadline-below-span {
-        padding-left: 40px;
-    }
-    .itspan2 {
-        padding-left: 10px;
-    }
-    .vacancies-white-block {
-        display: none;
-    }
-    .red-button {
-        display: none;
-    }
-    .media-red-button {
+    .sanadze-content {
+        border-top-right-radius: 66px;
         display: flex;
-        margin-top: 20px;
-        margin-bottom: 10px;
+        flex-direction: column;
         justify-content: center;
-    }
-    .media-red-button button img {
-        width: 12px;
-        height: 12px;
-        vertical-align: middle;
-    }
-    .media-red-button button {
-        width: 150px;
-        height: 30px;
-        background: #9F364E;
-        border-radius: 25px;    
-        border-color:#9F364E;
-    }
-    .media-red-button button span {
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 10px;
-        line-height: 24px;
-        color: #FFFFFF;
-    }
-    .header-logo-content img {
-        width: 30px;
-        height: 30px;
-        margin-top: 10px;
-        margin-left: 20px;
-    }
-    .header-logo-content h1{
-        display: none;
-    }
+        height: 500px;
+        padding: 5px;
+    } 
+    .table-container {
+        padding: 5%;
+    }   
 }
